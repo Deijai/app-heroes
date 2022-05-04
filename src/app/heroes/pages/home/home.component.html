@@ -1,0 +1,49 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav  class="sidenav" mode="push">
+
+    <mat-toolbar class="sidenav-larg">
+      <img class="logo" src="assets/logo-dma.png" alt="Logo">
+      <span>(DMA System)</span>
+      <span class="spacer"></span>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon mat-list-icon>menu</mat-icon>
+      </button>
+     </mat-toolbar>
+
+     <mat-nav-list>
+        <a routerLink="./list" mat-list-item (click)="sidenav.toggle()">
+          <mat-icon mat-list-icon>sort</mat-icon>
+          <span>Listar Heroes</span>
+        </a>
+
+        <a routerLink="./add" mat-list-item (click)="sidenav.toggle()">
+          <mat-icon mat-list-icon>add</mat-icon>
+          <span>Adicionar Heroe</span>
+        </a>
+
+        <a routerLink="./search" mat-list-item (click)="sidenav.toggle()">
+          <mat-icon mat-list-icon>search</mat-icon>
+          <span>Pesquisar Heroe</span>
+        </a>
+     </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+   <button mat-icon-button (click)="sidenav.toggle()">
+     <mat-icon>menu</mat-icon>
+   </button>
+   <span class="spacer"></span>
+   <button mat-mini-fab color="primary" aria-label="logout">
+    <mat-icon>logout</mat-icon>
+  </button>
+  </mat-toolbar>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+
+
+
+ </mat-sidenav-container>
+
