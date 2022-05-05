@@ -4,8 +4,10 @@
         "alterado",
         "alterar",
         "aparição",
+        "bloqueado",
         "Buscar",
         "cancelar",
+        "canload",
         "certeza",
         "continuar",
         "criado",
@@ -25,6 +27,8 @@
         "Primeira",
         "sidenav",
         "sucesso",
+        "usuario",
+        "usuarios",
         "Voltar"
     ]
 }

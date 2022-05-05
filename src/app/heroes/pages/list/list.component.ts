@@ -19,7 +19,6 @@ export class ListComponent implements OnInit {
       ( res: Heroe[] ) => {
         this.hasError = false;
         this.heroes = res;
-        console.log(res);
 
       },
       ( err ) =>  this.hasError = true,

@@ -34,7 +34,8 @@
      <mat-icon>menu</mat-icon>
    </button>
    <span class="spacer"></span>
-   <button mat-mini-fab color="primary" aria-label="logout">
+   <span> {{getAuth.usuario}} </span>
+   <button (click)="logout()" mat-mini-fab color="primary" aria-label="logout">
     <mat-icon>logout</mat-icon>
   </button>
   </mat-toolbar>
